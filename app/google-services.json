@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "972081436352",
+    "project_id": "batallanavail1",
+    "storage_bucket": "batallanavail1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972081436352:android:ce26a1c36e65333ad57f25",
+        "android_client_info": {
+          "package_name": "com.example.batttleshipv2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA1Wln9GrRUndWuDoEHbVuLfePBu3Mo_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3333FF"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#3333FF"
+        android:gravity="center_horizontal"
+        android:textSize = "22dp"
+        android:layout_weight="1"
+        android:text="Name" />
+    <TextView
+        android:id="@+id/itemscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#3333FF"
+        android:gravity="center_horizontal"
+        android:textSize = "22dp"
+        android:layout_weight="1"
+        android:text="Points" />
+
+</LinearLayout>
