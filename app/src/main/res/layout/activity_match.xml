@@ -7,7 +7,7 @@
     tools:context=".Main.MatchActivity">
 
     <ImageView
-        android:src="@drawable/aircraft"
+        android:src="@drawable/batalla_naval"
         android:id="@+id/icon_conection"
         android:layout_width="wrap_content"
         android:layout_height="300dp"

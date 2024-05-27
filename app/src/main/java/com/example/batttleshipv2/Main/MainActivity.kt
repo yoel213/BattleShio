@@ -1,4 +1,5 @@
 package com.example.batttleshipv2.Main
+
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
@@ -7,12 +8,11 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-
 import com.example.batttleshipv2.R
 import com.example.batttleshipv2.getViewModel
 import com.firebase.ui.auth.AuthUI
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-
 
 
 class MainActivity : AppCompatActivity() {
@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
     private fun launchLoginActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         this.startActivity(intent)
@@ -90,5 +91,14 @@ class MainActivity : AppCompatActivity() {
             logOutBtn.visibility = View.GONE
             findMatch.visibility = View.GONE
         }
+    }
+
+    @SuppressLint("MissingSuperCall")
+    override fun onBackPressed() {
+        val intent=Intent(Intent.ACTION_MAIN)
+        intent.addCategory(Intent.CATEGORY_HOME)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
+
     }
 }

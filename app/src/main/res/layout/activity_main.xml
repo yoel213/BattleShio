@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/brown"
+    android:background="@color/wheat"
     tools:context=".Main.MainActivity">
 
     <FrameLayout
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/buttons_back"
+        android:id="@+id/frameLayout4"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="300dp"
+        android:background="@color/ocean"
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
     </FrameLayout>
 
@@ -21,12 +23,14 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title">
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/userLogIngV">
+
 
         <Button
             android:id="@+id/starBtn"
             android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:backgroundTint="@color/blue_dark"
             android:text="Iniciar"
             android:background="@drawable/buttons_back"
@@ -38,7 +42,8 @@
         <Button
             android:id="@+id/findMatch"
             android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/buttons_back"
             android:text="Encontrar Partida"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,10 +57,11 @@
         android:id="@+id/scoreBtn"
         android:background="@drawable/buttons_back"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         app:layout_constraintTop_toBottomOf="@id/frameLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="3dp"
         android:text="score"/>
 
 
@@ -71,40 +77,29 @@
         app:layout_constraintTop_toBottomOf="@id/frameLayout" />
 
     <ImageView
-        android:id="@+id/image_avion"
+        android:id="@+id/image_logo"
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:src="@drawable/aircraft"
+        android:layout_height="250dp"
+        android:src="@drawable/batalla_naval"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="60sp"
-        android:text="Batalla Naval"
-        android:textColor="@color/blue_dark"
-        android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_avion"
-        />
+
 
     <TextView
         android:id="@+id/userLogIngV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
-        android:text="Perfil iniciado"
+        tools:text="Perfil iniciado"
+        android:text=""
         android:textColor="@color/blue_dark"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logOutBtn" />
+        app:layout_constraintTop_toBottomOf="@id/frameLayout4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

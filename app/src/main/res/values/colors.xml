@@ -15,6 +15,7 @@
     <color name="gray_light">#bfc0c0</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
-    <color name="brown">#ef8354</color>
+    <color name="brown">#D6A152</color>
     <color name="gray">#4f5d75</color>
+    <color name="wheat">#EBC47D</color>
 </resources>
