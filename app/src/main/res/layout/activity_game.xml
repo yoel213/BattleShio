@@ -10,35 +10,37 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageView
             android:id="@+id/leftrules"
-            android:src="@drawable/ic_baseline_drag_handle_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/baseline_shield_24"
             app:layout_constraintEnd_toStartOf="@id/rules"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
+            android:id="@+id/rules"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:text="A la batalla"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/leftrules"
-            app:layout_constraintEnd_toStartOf="@id/right"
-            android:textAlignment="center"
             android:gravity="center"
-            android:id="@+id/rules"
-            />
+            android:text="Defensa"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@id/right"
+            app:layout_constraintStart_toEndOf="@id/leftrules"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_drag_handle_24"
             android:id="@+id/right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/baseline_shield_24"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/rules"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -84,7 +86,7 @@
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:background="@color/white"
+            android:background="@color/ocean2"
             android:horizontalSpacing="2dp"
             android:isScrollContainer="false"
             android:numColumns="8"
@@ -113,7 +115,7 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <TextView
-                android:text="Yop"
+                android:text="Yo"
                 android:textSize="18sp"
                 android:gravity="center"
                 android:textColor="@color/gray_light"
@@ -135,19 +137,21 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageView
             android:id="@+id/leftrules2"
-            android:src="@drawable/ic_baseline_drag_handle_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/baseline_rocket_24"
             app:layout_constraintEnd_toStartOf="@id/rules2"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:text="A la batalla"
+            android:text="Ataque"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/leftrules2"
             app:layout_constraintEnd_toStartOf="@id/right2"
@@ -155,15 +159,16 @@
             android:gravity="center"
             android:id="@+id/rules2"
             />
+
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_drag_handle_24"
             android:id="@+id/right2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/baseline_rocket_24"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/rules2"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <GridView
         android:id="@+id/opponentBoardView"
@@ -171,7 +176,7 @@
         android:layout_height="350dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:background="@color/white"
+        android:background="@color/ocean3"
         android:horizontalSpacing="2dp"
         android:isScrollContainer="false"
         android:numColumns="8"

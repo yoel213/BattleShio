@@ -14,17 +14,23 @@
         android:theme="@style/AppTheme.NoActionBar"
         >
 
-        <activity android:name=".Main.MatchActivity" />
-        <activity android:name=".Main.GameActivity" />
+        <activity android:name=".Main.MatchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Main.GameActivity"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".Main.LoginActivity" />
+        <activity android:name=".Main.LoginActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Main.ScoreActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity android:name=".Main.ConfigActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".Main.MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

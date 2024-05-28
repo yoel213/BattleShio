@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#25567b</color>
+    <color name="colorPrimary">#444444</color>
     <color name="colorPrimaryDark">#002d4f</color>
     <color name="colorPrimarySurface">#d7effe</color>
     <color name="colorAccent">#5782aa</color>
 
-    <color name="ocean">#99c2e1</color>
+
+    <color name="ocean">#336699</color>
+    <color name="ocean2">#66CC66</color>
+    <color name="ocean3">#FFCCCC</color>
     <color name="colorBorder">#25567b</color>
     <color name="colorSelected">#808080</color>
 
-    <color name="colorHit">#f60119</color>
+    <color name="colorHit">#FFFFFF</color>
     <color name="colorMissed">#efefef</color>
     <color name="blue_dark">#2d3142</color>
     <color name="gray_light">#bfc0c0</color>

@@ -175,7 +175,7 @@ private val viewModel by lazy {
 
         if (!shipKilled.isBlank()) {
 
-            Toast.makeText(this, "Ouch! $shipKilled has been destroyed!", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Ouch! $shipKilled ha sido destruido!", Toast.LENGTH_LONG).show()
 
             val points: Int = viewModel.scoreSum(dataSnapshot)
 
@@ -292,6 +292,8 @@ private val viewModel by lazy {
 
     private fun refreshMyBoard(fieldStatus: Array<Array<Int>>) {
         myBoardAdapter.refresh(fieldStatus)
+        Toast.makeText(this, "¡¡Tu turno de atacar!!", Toast.LENGTH_LONG).show()
+
     }
 
     private fun refreshOpponentBoard(fieldStatus: Array<Array<Int>>) {
